@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome CDN  -->
+  <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <img src="/images/logo2.png" class="logo">
+      <ul>
+        <li><img src="images/notification.png" alt=""></li>
+        <li><img src="images/inbox.png" alt=""></li>
+        <li><img src="images/video.png" alt=""></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <div class="search-box">
+        <img src="images/search.png" alt="">
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+        <img src="images/profile-pic.jpg ">
+      </div>
+    </div>
+  <!-- ------ SETTINGS MENU ------  -->
+    <div class="settings-menu">
+    <div id="dark-btn">
+      <span></span>
+    </div>
+      <div class="settings-menu-inner">
+        <div class="user-profile">
+          <img src="images/profile-pic.jpg">
+          <div>
+            <p>Amr Mohammed</p>
+            <a href="profile.html">See your profile</a>
+          </div>
+        </div>
+        <hr>
+        <div class="user-profile">
+          <img src="images/feedback.png">
+          <div>
+            <p>Give Feedback</p>
+            <a href="#">Help us to improve the new design</a>
+          </div>
+        </div>
+        <hr>
+        <div class="settings-links">
+          <img src="images/setting.png" class="settings-icon">
+          <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+        </div>
+        <div class="settings-links">
+          <img src="images/help.png" class="settings-icon">
+          <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+        </div>
+        <div class="settings-links">
+          <img src="images/display.png" class="settings-icon">
+          <a href="#">Display & Accessability<img src="images/arrow.png" width="10px"></a>
+        </div>
+        <div class="settings-links">
+          <img src="images/logout.png" class="settings-icon">
+          <a href="#">Logout<img src="images/arrow.png" width="10px"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+  <!-- ------ LEFT SIDEBAR ------  -->
+    <div class="left-sidebar">
+      <div class="imp-links">
+        <a href="#"><img src="images/news.png">Latest News</a>
+        <a href="#"><img src="images/friends.png">Friends</a>
+        <a href="#"><img src="images/group.png">Group</a>
+        <a href="#"><img src="images/marketplace.png">Marketplace</a>
+        <a href="#"><img src="images/watch.png">Watch</a>
+        <a href="#">See More</a>
+      </div>
+      <div class="shortcut-links">
+        <p>Your Shortcuts</p>
+        <a href="#"><img src="images/shortcut-1.jpg"> Elzero Web School</a>
+        <a href="#"><img src="images/shortcut-2.jpg"> Web Developers Camp</a>
+        <a href="#"><img src="images/shortcut-3.png"> Web Developments</a>
+        <a href="#"><img src="images/shortcut-4.png">  Easy Tutorial</a>
+      </div>
+    </div>
+  <!-- ------ MAIN CONTENT ------  -->
+    
+    <div class="main-content">
+      <div class="story-gallery">
+        <div class="story story1">
+          <img src="images/upload.png" >
+          <p>Post Story</p>
+        </div>
+        <div class="story story2">
+          <img src="images/member-1.jpg" >
+          <p>Osama</p>
+        </div>
+        <div class="story story3">
+          <img src="images/member-2.jpg" >
+          <p>Amr Matar</p>
+        </div>
+        <div class="story story4">
+          <img src="images/member-3.png" >
+          <p>Sara</p>
+        </div>
+        <div class="story story5">
+          <img src="images/member-4.png" >
+          <p>Samona</p>
+        </div>
+      </div>
+      <div class="write-post-container">
+        <div class="user-profile">
+          <img src="images/profile-pic.jpg">
+          <div>
+            <p>Amr Mohammed</p>
+            <small>Public <i class="fa-solid fa-sort-down"></i></small>
+          </div>
+        </div>
+        <div class="post-input-container">
+          <textarea rows="3" placeholder="What's on your mind, Amr?"></textarea>
+          <div class="add-post-links">
+            <a href="#"><img src="images/live-video.png" alt="">Live Video</a>
+            <a href="#"><img src="images/photo.png" alt="">Photo/Video</a>
+            <a href="#"><img src="images/feeling.png" alt="">Feeling/Activity</a>
+          </div>
+        </div>
+      </div>
+      <div class="post-container">
+      <div class="post-row">
+        <div class="user-profile">
+          <img src="images/profile-pic.jpg">
+          <div>
+            <p>Amr Mohammed</p>
+            <span>June 25 2023, 12:35 am </span>
+          </div>
+        </div>
+        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+      </div>
+        <p class="post-text">Subscribe <a href="https://www.youtube.com/@EasyTutorialsVideo" target="_blank">@Easy Tutorials</a> & <a href="https://www.youtube.com/@ElzeroWebSchool" target="_blank">@Elzero Web School</a> YouTube channels to watch more videos on website development and UI designs.</p>
+        <img src="images/feed-image-1.jpg" class="post-img">
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like.png">142</div>
+            <div><img src="images/comments.png">13</div>
+            <div><img src="images/share.png">5</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.jpg" alt="">
+            <i class="fa-solid fa-sort-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="post-container">
+      <div class="post-row">
+        <div class="user-profile">
+          <img src="images/member-1.jpg">
+          <div>
+            <p>Osama Mohamed</p>
+            <span>2 days</span>
+          </div>
+        </div>
+        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+      </div>
+        <p class="post-text-ar">
+          الموقع دة عبارة عن نشرة بريدية في مجال الفرونت اند 
+          كل اللي عليك بتكتب ايميلك وتقوله سبسكرايب
+          <br>وكل اسبوع بيبعتلك نشرة بريدية 
+          فيها مواضيع منوعة في المجال من أكتر من موقع 
+          هتستفيد منه جدا في انك تتابع الجديد
+          <br> -- <br>
+        </p>
+          <a href="https://frontendweekly.co/" target="_blank">https://frontendweekly.co/</a></p>
+        <img src="images/feed-image-2.jpg" class="post-img">
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like-blue.png">442</div>
+            <div><img src="images/comments.png">33</div>
+            <div><img src="images/share.png">51</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.jpg" alt="">
+            <i class="fa-solid fa-sort-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/shortcut-2.jpg">
+            <div>
+              <p><a href="https://www.facebook.com/profile.php?id=100089048053055" target="_blank" class="wdc-link">Web Developers Camp</a></p>
+              <span>2 days</span>
+            </div>
+          </div>
+          <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+          <p class="post-text">
+            How to become a front-end developer?
+            <br> -- <br>
+            To see the whole post visit <a href="https://www.facebook.com/profile.php?id=100089048053055" target="_blank" class="wdc-link">@Web Developers Camp</a>
+          </p>
+          <img src="images/feed-image-3.jpg" class="post-img">
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png">442</div>
+              <div><img src="images/comments.png">33</div>
+              <div><img src="images/share.png">51</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.jpg" alt="">
+              <i class="fa-solid fa-sort-down"></i>
+            </div>
+          </div>
+        </div>
+      <div class="post-container">
+      <div class="post-row">
+        <div class="user-profile">
+          <img src="images/shortcut-2.jpg">
+          <div>
+            <p><a href="https://www.facebook.com/profile.php?id=100089048053055" target="_blank" class="wdc-link">Web Developers Camp</a></p>
+            <span>2 days</span>
+          </div>
+        </div>
+        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+      </div>
+        <p class="post-text">
+          How does flex-box work?
+          <br> -- <br>
+          To see the whole post visit <a href="https://www.facebook.com/profile.php?id=100089048053055" target="_blank" class="wdc-link">@Web Developers Camp</a>
+        </p>
+        <img src="images/feed-image-4.jpg" class="post-img">
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like-blue.png">442</div>
+            <div><img src="images/comments.png">33</div>
+            <div><img src="images/share.png">51</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.jpg" alt="">
+            <i class="fa-solid fa-sort-down"></i>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="load-more-btn">Load More</button>
+    </div>
+  <!-- ------ RIGHT SIDEBAR ------  -->
+    
+    <div class="right-sidebar">
+      <div class="sidebar-title">
+        <h4>Events</h4>
+        <a href="#">See All</a>
+      </div>
+      <div class="event">
+        <div class="left-event">
+          <h3>18</h3>
+          <span>March</span>
+        </div>
+        <div class="right-event">
+          <h4>Cyber Security Community</h4>
+          <p><i class="fa-solid fa-location-dot"></i>  Smart Village</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+      <div class="event">
+        <div class="left-event">
+          <h3>5</h3>
+          <span>February</span>
+        </div>
+        <div class="right-event">
+          <h4>Web Developers Event</h4>
+          <p><i class="fa-solid fa-location-dot"></i>  Tagamo El-khames</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+      <div class="sidebar-title">
+        <h4>Advertisement</h4>
+        <a href="#">Close</a>
+      </div>
+      <img src="images/advertisement.png" class="sidebar-ads">
+      <div class="sidebar-title">
+        <h4>Conversation</h4>
+        <a href="#">Hide Chat</a>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="images/member-1.jpg" alt="">
+        </div>
+        <p>Osama Mohammed</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="images/member-2.png" alt="">
+        </div>
+        <p>Jackson Aston</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="images/member-3.png" alt="">
+        </div>
+        <p>Sara</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Copyright 2021 - Easy Tutorials YouTube Channel</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
